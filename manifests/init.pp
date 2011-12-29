@@ -39,7 +39,7 @@ class vnstat($database_dir = '/home/vnstat', $interface = "eth0") {
 		new-database:
 	  	command => "/usr/bin/vnstat -u -i ${interface}",
 	  	creates => "${$database_dir}/${$interface}",
-		require => Package['vnstat'],
+		require => [Package['vnstat'], File[$database_dir]],
 		notify => Service['vnstat'],
 	}
 }
