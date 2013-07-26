@@ -1,5 +1,7 @@
 # Puppet Vnstat Module
 
+[![Build Status](https://travis-ci.org/bdossantos/puppet-module-vnstat.png)](https://travis-ci.org/bdossantos/puppet-module-vnstat)
+
 Module for configuring Vnstat
 
 Tested on Debian GNU/Linux 6.0 Squeeze with Puppet 2.6 and 2.7. Patches for other operating systems welcome.
